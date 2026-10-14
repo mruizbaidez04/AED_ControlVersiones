@@ -35,3 +35,23 @@ help(Animals2)
 
 El conjunto `Animals2` contiene los datos del conjunto `mammals` y los de otros 3 animales adicionales.
 
+
+# Apartado 2
+
+Visualizamos los datos:
+
+```{r}
+dim(mammals)
+head(mammals, 5)
+tail(mammals, 5)
+str(mammals)
+```
+
+```{r}
+dim(Animals2)
+head(Animals2, 5)
+tail(Animals2, 5)
+str(Animals2)
+```
+
+
