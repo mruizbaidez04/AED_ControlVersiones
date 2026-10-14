@@ -9,4 +9,29 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+# Apartado 1
+
+Instalamos y cargamos los paquetes `MASS` y `robustbase`.
+
+```{r, message=FALSE, warning=FALSE}
+install.packages("MASS")
+library(MASS)
+
+install.packages("robustbase")
+library(robustbase)
+```
+
+Utilizamos la ayuda para ver las características de los conjuntos
+
+```{r}
+help(mammals)
+```
+
+El conjunto `mammals` contiene el promedio del peso corporal (en kg) y del peso del cerebro (en g) para 62 especies de mamíferos terrestres.
+
+```{r}
+help(Animals2)
+```
+
+El conjunto `Animals2` contiene los datos del conjunto `mammals` y los de otros 3 animales adicionales.
 
