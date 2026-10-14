@@ -82,3 +82,22 @@ commonAnimals
 Observamos que los conjuntos de datos tienen 58 animales en común.
 
 
+# Apartado 5
+
+Los animales que están en `mammals` pero que no están en ambos conjuntos son:
+
+```{r}
+non_common_mammals <- setdiff(rownames(mammals), commonAnimals)
+non_common_mammals
+```
+Observamos que en total son 4. Por otro lado, los animales que están en `Animals2` pero no están en ambos conjuntos son:
+
+```{r}
+non_common_Animals2 <- setdiff(rownames(Animals2), commonAnimals)
+non_common_Animals2
+```
+Observamos que, hay 4 animales que no se consideran comunes a ambos conjuntos porque están escritos de formas distintas. Los otros 3 animales que están en `Animals2` y no están en `mammals` son dinosaurios.
+
+Por tanto, realmente todos los elementos de `mammals` están en `Animals2`, solo que hay 4 que están escritos de manera distinta.
+
+
