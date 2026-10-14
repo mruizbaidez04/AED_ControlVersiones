@@ -101,3 +101,13 @@ Observamos que, hay 4 animales que no se consideran comunes a ambos conjuntos po
 Por tanto, realmente todos los elementos de `mammals` están en `Animals2`, solo que hay 4 que están escritos de manera distinta.
 
 
+# Apartado 6
+
+Vamos a analizar las diferencias entre los animales que no aparecen en ambos conjuntos, para ello vamos a mostrar los datos de esos animales:
+
+```{r}
+mammals[non_common_mammals, ]
+Animals2[non_common_Animals2, ]
+```
+
+Como habíamos comentado en el apartado anterior, realmente todos los animales que están en `mammals` están en `Animals2`, solo que hay 4 que aparecen con distinto nombre. Por otro lado observamos que los animales que están en `Animals2` y no están en `mammals` son dinosaurios y que tienen pesos corporales y pesos del cerebro muy altos, en comparación al resto de animales.
