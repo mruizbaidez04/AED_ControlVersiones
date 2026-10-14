@@ -55,3 +55,18 @@ str(Animals2)
 ```
 
 
+# Apartado 3
+
+Mostramos los nombres de las filas y de las columnas:
+
+```{r}
+rownames(mammals)
+colnames(mammals)
+```
+
+```{r}
+rownames(Animals2)
+colnames(Animals2)
+```
+
+
