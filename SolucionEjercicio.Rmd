@@ -33,7 +33,7 @@ El conjunto `mammals` contiene el promedio del peso corporal (en kg) y del peso 
 help(Animals2)
 ```
 
-El conjunto `Animals2` contiene los datos del conjunto `mammals` y los de otros 3 animales adicionales.
+El conjunto `Animals2` contiene el promedio del peso corporal (en kg) y del peso del cerebro (en g) para 65 especies de animales terrestres.
 
 
 # Apartado 2
@@ -68,5 +68,17 @@ colnames(mammals)
 rownames(Animals2)
 colnames(Animals2)
 ```
+
+
+# Apartado 4
+
+Crearemos una nueva variable que almacene los animales que están en ambos conjuntos
+
+```{r}
+commonAnimals <- intersect(rownames(mammals), rownames(Animals2))
+commonAnimals
+```
+
+Observamos que los conjuntos de datos tienen 58 animales en común.
 
 
